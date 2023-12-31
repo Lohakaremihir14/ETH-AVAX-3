@@ -19,30 +19,30 @@ In this Create a Contract To Mint The Token , Burn The Token and Transfer the To
 * Import the File Form openzeppelin library (ERC20 & Ownable)
   
 * Function Mint
-
+```
 function mint(address account, uint256 amount) external onlyOwner {
         _mint(account, amount);
     }
-
+```
 This functions helps to Mint the Token to the Owner Address.
 
 * Funtion Burn 
 
-
+```
 function burn(uint256 amount) external onlyOwner {
     _burn(_msgSender(), amount);
 }
-
+```
 The Function to Burn the Token from the Owner address by Specified Amount. 
 
 * Funtion TransferWithCheck 
 
-
- function transferWithCheck(address to, uint256 amount) external {
+```
+ function transfertoken(address to, uint256 amount) external {
 
         _transfer(_msgSender(), to, amount);
     }
-
+```
  The Transfer Function allow The Owner to Transfer the Token to Any Address by Specified Amount.
 
 ## Authors
